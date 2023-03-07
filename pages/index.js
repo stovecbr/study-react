@@ -4,6 +4,8 @@ import styles from '@/styles/Home.module.css'
 import {Logo} from "../components/logo"
 import {Header} from "../components/header"
 import {Link} from "../components/link"
+import { Headline } from "../components/headline"
+import { MainTitle } from '@/components/maintitle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,16 +23,14 @@ export default function Home() {
 
         <div className={styles.description}>
 
-          <p>
-          🐣🐣🐣🐣🐣🐣Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
+          <Headline  page="index"/>
 
           <Header />
 
-        </div>
+        </div>         
 
-        <h1>INDEX PAGE</h1>
+        <MainTitle maintitle="index" />
+        <h1>INDEX PAGE</h1>         
 
         <Logo />
 
