@@ -8,6 +8,10 @@
   /* text-transform: capitalize; */
 }
 
+.title {
+  text-transform: capitalize;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
