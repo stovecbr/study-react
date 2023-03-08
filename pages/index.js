@@ -1,11 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import {Logo} from "../components/logo"
-import {Header} from "../components/header"
-import {Link} from "../components/link"
-import { Headline } from "../components/headline"
-import { MainTitle } from '@/components/maintitle'
+import {Main} from "../components/main"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,24 +14,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+{/* コンポーネント化 */}
+      {/* <main className={styles.main}> */}
+        {/* <div className={styles.description}> */}
+          {/* <Headline */}
+            {/* page="index"  */}
+            {/* // code={<code className={styles.code}>pages/index.js</code>} */}
+            {/* // onClick={() => alert("クリックU^ｪ^U")} */}
+          {/* > */}
+          {/* childrenで書き換え */}
+          {/* コンポーネント */}
+          {/* <code className={styles.code}>pages/index.js</code> */}
+          {/* 閉じタグ必要 */}
+          {/* </Headline> */}
+          {/* <Header /> */}
+        {/* </div>     */}
+        {/* <MainTitle maintitle="index" /> */}
+        {/* <h1>INDEX PAGE</h1>          */}
+        {/* <Logo /> */}
+        {/* <Link />         */}
+      {/* </main> */}
 
-        <div className={styles.description}>
-
-          <Headline  page="index"/>
-
-          <Header />
-
-        </div>         
-
-        <MainTitle maintitle="index" />
-        <h1>INDEX PAGE</h1>         
-
-        <Logo />
-
-        <Link />
-        
-      </main>
+      <Main page="index"/>
     </>
   )
 }
