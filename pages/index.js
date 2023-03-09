@@ -14,27 +14,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-{/* コンポーネント化 */}
-      {/* <main className={styles.main}> */}
-        {/* <div className={styles.description}> */}
-          {/* <Headline */}
-            {/* page="index"  */}
-            {/* // code={<code className={styles.code}>pages/index.js</code>} */}
-            {/* // onClick={() => alert("クリックU^ｪ^U")} */}
-          {/* > */}
-          {/* childrenで書き換え */}
-          {/* コンポーネント */}
-          {/* <code className={styles.code}>pages/index.js</code> */}
-          {/* 閉じタグ必要 */}
-          {/* </Headline> */}
-          {/* <Header /> */}
-        {/* </div>     */}
-        {/* <MainTitle maintitle="index" /> */}
-        {/* <h1>INDEX PAGE</h1>          */}
-        {/* <Logo /> */}
-        {/* <Link />         */}
-      {/* </main> */}
-
       <Main page="index"/>
     </>
   )

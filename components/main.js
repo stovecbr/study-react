@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from './main.module.css'
 import {Logo} from "../components/logo"
 import {Header} from "../components/header"
 import {Link} from "../components/link"
@@ -22,7 +22,7 @@ export function Main(props) {
 
         </div>
 
-        <MainTitle maintitle="index" />
+        <MainTitle maintitle={props.page} />
         <Logo />
         <Link />
         

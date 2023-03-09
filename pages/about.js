@@ -14,31 +14,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <main className={styles.main}> */}
-        {/* <div className={styles.description}> */}
-          {/* <Headline */}
-            {/* // 文字列 */}
-            {/* page="about" */}
-            {/* // 数値 */}
-            {/* // number={11111} */}
-            {/* // 配列 */}
-            {/* // array={[1, 2, 3]} */}
-            {/* // オブジェクト */}
-            {/* // obj={{ foo: "foo", bar: "bar" }} */}
-            {/* // 真偽値 */}
-            {/* // boolean */}
-          {/* > */}
-          {/* コンポーネント */}
-            {/* code={<code className={styles.code}>pages/about.js</code>} */}
-          {/* </Headline> */}
-          {/* <Header /> */}
-        {/* </div> */}
-        {/* <MainTitle maintitle="about" /> */}
-        {/* <h1>ABOUT PAGE</h1> */}
-        {/* <Logo /> */}
-        {/* <Link /> */}
-      {/* </main> */}
-
       <Main page="about"/>
     </>
   );
