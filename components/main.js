@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import styles from './main.module.css'
+import styles from './Main.module.css'
 import {Logo} from "./Logo"
 import {Header} from "./Header"
 import {Link} from "./Link"
