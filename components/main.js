@@ -1,10 +1,10 @@
 import { Inter } from 'next/font/google'
-import styles from "./Main.module.css"
-import {Logo} from "./Logo"
-import {Header} from "./Header"
-import {Link} from "./Link"
-import { Headline } from "./Headline"
-import { MainTitle } from "./MainTitle"
+import styles from '@/components/Main.module.css'
+import { Logo } from '@/components/Logo'
+import { Header } from '@/components/Header'
+import { Link } from '@/components/Link'
+import { Headline } from '@/components/Headline'
+import { MainTitle } from '@/components/MainTitle'
 
 const inter = Inter({ subsets: ['latin'] })
 
