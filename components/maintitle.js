@@ -1,4 +1,4 @@
-import styles from './maintitle.module.css'
+import styles from './Maintitle.module.css'
 
 export function MainTitle(props){
   return(
