@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import { Main } from "@/components/Main";
-import { HeaderLink } from "@/components/HeaderLink";
+import { Main } from "@/components/main";
+import { HeaderLink } from "@/components/headerLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
