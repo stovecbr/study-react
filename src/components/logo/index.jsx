@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from './logo.module.css'
+import styles from '@/src/components/logo/logo.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
