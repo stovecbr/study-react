@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import { Main } from "@/src/components/main";
 import { HeaderLink } from "@/src/components/HeaderLink";
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +20,16 @@ export default function Home() {
     e.preventDefault();
     alert(foo);
   },[]);
+
+  useEffect(() => {
+    console.log("マウント時")
+    document.body.style.backgroundColor = "lightpink";
+
+    return () => {
+      console.log("アンマウント時")
+      document.body.style.backgroundColor = "";
+    };
+  }, []);
 
   return (
     <>
