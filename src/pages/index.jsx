@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import { Main } from "@/src/components/main";
 import { HeaderLink } from "@/src/components/HeaderLink";
-import { useCallback, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,20 +13,17 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 export default function Home() {
-  const foo = 1;
+  const [count, setCount] = useState(1);
 
-  const handleClick = useCallback((e) => {
-    console.log(e.target.href);
-    e.preventDefault();
-    alert(foo);
-  },[]);
+  const handleClick = (e) => {
+    setCount((count) => count + 1);
+    setCount((count) => count + 1);
+  };
 
   useEffect(() => {
-    console.log("マウント時")
     document.body.style.backgroundColor = "lightpink";
 
     return () => {
-      console.log("アンマウント時")
       document.body.style.backgroundColor = "";
     };
   }, []);
@@ -37,10 +34,8 @@ export default function Home() {
         <title>Index Page</title>
       </Head>
       <HeaderLink />
-
-      <a href="/about" onClick={handleClick}>
-        ぼたん
-      </a>
+      <h1>{count}</h1>
+      <button onClick={handleClick}>ぼたん</button>
 
       <Main page="index" />
     </>
