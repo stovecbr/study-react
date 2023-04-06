@@ -2,16 +2,19 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import { Main } from "@/src/components/main";
 import { HeaderLink } from "@/src/components/HeaderLink";
-import { useCounter } from "@/src/hooks/useCounter";
-import { useInputArray } from "@/src/hooks/useInputArray";
-import { useBgLightPink } from "@/src/hooks/useBgLightPink";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
-  const { count, isShow, handleClick, handleDisplay } = useCounter();
-  const { text, array, handleChange, handleAdd } = useInputArray();
-  useBgLightPink();
+export default function Home( {
+  count,
+  isShow,
+  handleClick,
+  handleDisplay,
+  text,
+  array,
+  handleChange,
+  handleAdd,
+}) {
 
   return (
     <>
