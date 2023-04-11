@@ -6,9 +6,12 @@ export function Headline(props) {
   return (
     <div>
           <p>
-          🐣🐣🐣🐣🐣🐣Get started by editing&nbsp;
-            {props.children}
+          🐣🐣🐣🐣🐣🐣アイテムの数は&nbsp;
+            {props.children}個&nbsp;です。
           </p>
+
+          <button onClick={props.handleReduce}>減らす</button>
+
     </div>
   )
 }
