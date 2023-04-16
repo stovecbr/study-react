@@ -4,7 +4,7 @@ import styles from '@/src/components/logo/logo.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export  function Logo() {
+export const Logo = () => {
   return (        
         <div className={styles.center}>
           <Image

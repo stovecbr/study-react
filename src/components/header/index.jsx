@@ -4,7 +4,7 @@ import styles from '@/src/components/header/header.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export  function Header() {
+export const Header = () => {
   return (
     <>
       <div>

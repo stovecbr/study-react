@@ -36,7 +36,7 @@ const ITEMS = [
   },
 ];
 
-export function Main(props) {
+export const Main = (props) => {
   const [items, setItems] = useState(ITEMS);
   const handleReduce = useCallback(() => {
     setItems((prevItems) => {
@@ -48,7 +48,7 @@ export function Main(props) {
     <div>
       <main className={styles.main}>
         <div className={styles.description}>
-          <Headline page={props.page}  handleReduce={handleReduce}>
+          <Headline page={props.page} handleReduce={handleReduce}>
             <code className={styles.code}>{items.length}</code>
           </Headline>
 
@@ -61,4 +61,4 @@ export function Main(props) {
       </main>
     </div>
   );
-}
+};
